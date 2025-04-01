@@ -34,7 +34,8 @@ Installation & Setup
 ![Before Loading the page](image.png)
 
 Dashboard Screen
-![image](https://github.com/user-attachments/assets/bb83b374-d7a2-44f4-ae1c-545c8b70ae64)
+![image](https://github.com/user-attachments/assets/b14b9697-9919-458e-8381-e4b8add19dd4)
+
 
 
 Transaction 
