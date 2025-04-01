@@ -78,6 +78,7 @@ const Dashboard = () => {
               />
            </SectionMargin>
               <RewardSummary transactions={customerTransactions} />
+             
               <TransactionTable transactions={filteredTransactions} 
               />
             </>
