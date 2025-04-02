@@ -34,13 +34,15 @@ Installation & Setup
 ![Before Loading the page](image.png)
 
 Dashboard Screen
-![image](https://github.com/user-attachments/assets/bb83b374-d7a2-44f4-ae1c-545c8b70ae64)
+![image](https://github.com/user-attachments/assets/d09675f0-5cc9-42bd-b9f5-e7b20c07254c)
+
+when filtering the customer name last 3 months default
+![image](https://github.com/user-attachments/assets/6da5c295-fe6c-491c-b799-190fed0239fe)
+
+Transaction when filtering months and year
+![image](https://github.com/user-attachments/assets/a8c89bd8-6813-4b26-b00e-d02cfb741a05)
 
 
-Transaction 
-![image](https://github.com/user-attachments/assets/e9b78ca7-1c31-4d60-a849-99d55ccf6090)
-More Transaction:
-![image](https://github.com/user-attachments/assets/128cdf67-1695-4727-ac62-3024541aed63)
 
 
 
