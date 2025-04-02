@@ -1,5 +1,5 @@
 import React from 'react';
-import { MONTHS, YEARS, MONTH, YEAR } from '../constants/constants';
+import { MONTHS, YEARS, MONTH, YEAR, MONTH_LABELS } from '../constants/constants';
 const Filters = ({ selectedMonth, selectedYear, onMonthChange, onYearChange }) => {
   const handleMonthChange = (e) => {
     onMonthChange(e.target.value);
@@ -14,7 +14,7 @@ const Filters = ({ selectedMonth, selectedYear, onMonthChange, onYearChange }) =
         <label>{MONTH}</label>
         <select value={selectedMonth} onChange={handleMonthChange}>
           {MONTHS.map(month => (
-            <option key={month} value={month}>  {month === 'last-3' ? 'Last 3 Months' : month}</option>
+            <option key={month} value={month}> {MONTH_LABELS[month] || month}</option>
           ))}
         </select>
       </span>
