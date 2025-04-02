@@ -80,6 +80,10 @@ export default GlobalStyle;
 export const SectionMargin = styled.div`
   margin-top: 2rem;
 `;
+
+export const FiltersWrapper = styled.div`
+  margin-top: 2rem;
+`;
 export const SpinnerWrapper = styled.div`
   text-align: center;
   margin-top: 2rem;

@@ -1,6 +1,6 @@
 //Reward Summary
 export const REWARD_SUMMARY_HEADERS = Object.freeze(['Month', 'Total Points', 'Total Spent']);
-export const MONTHLY_REWARD_SUMMARY = "Monthly Reward Summary"
+export const MONTHLY_REWARD_SUMMARY = "Reward Summary: All Months"
 
 //Customer List
 export const SELECT_CUSTOMER_NAME = "Select Customer Name  ";

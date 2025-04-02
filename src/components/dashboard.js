@@ -2,14 +2,15 @@ import React, { useMemo, useState } from 'react';
 import useTransactions from '../hooks/useTransactions';
 import CustomerList from './customerList';
 import Filters from './filters';
-import RewardSummary from '../../src/components/rewardSummary';
+import RewardSummary from './rewardSummary';
 import { getLast3MonthsKeys } from '../utils/dateUtils';
-import TransactionTable from '../../src/components/transactionTable';
+import TransactionTable from './transactionTable'
 import {
   SpinnerWrapper,
   SpinnerCircle,
   SectionMargin,
-  PageWrapper
+  PageWrapper,
+  FiltersWrapper
 } from '../styles/globalStyles'; 
 import {
   DEFAULT_MONTH,
@@ -22,7 +23,14 @@ const Dashboard = () => {
   const [selectedMonth, setSelectedMonth] = useState(DEFAULT_MONTH);
   const [selectedYear, setSelectedYear] = useState(DEFAULT_YEAR);
   const { transactions, loading, error } = useTransactions();
+  
+  const handleMonthChange = (month) => {
+    setSelectedMonth(month);
+  };
 
+  const handleYearChange = (year) => {
+    setSelectedYear(year);
+  };
   const customers = useMemo(() => {
     const map = new Map();
     transactions.forEach(t => {
@@ -70,15 +78,16 @@ const Dashboard = () => {
           {selectedCustomer && (
             <>
            <SectionMargin>
+           <RewardSummary transactions={customerTransactions} />   
+           <FiltersWrapper> 
               <Filters 
-                selectedMonth={selectedMonth}
-                selectedYear={selectedYear}
-                onMonthChange={setSelectedMonth}
-                onYearChange={setSelectedYear}
+                 selectedMonth={selectedMonth}
+                 selectedYear={selectedYear}
+                 onMonthChange={handleMonthChange}
+                 onYearChange={handleYearChange}
               />
-           </SectionMargin>
-              <RewardSummary transactions={customerTransactions} />
-             
+              </FiltersWrapper>
+           </SectionMargin>         
               <TransactionTable transactions={filteredTransactions} 
               />
             </>

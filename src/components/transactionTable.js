@@ -29,6 +29,14 @@ const TransactionTable = ({ transactions }) => {
     ));
   }, [currentData]);
 
+  const handlePrev = () => {
+    setPage((p) => p - 1);
+  };
+  
+  const handleNext = () => {
+    setPage((p) => p + 1);
+  };
+  
   return (
     <>
       <h3>Transaction Details</h3>
@@ -48,8 +56,8 @@ const TransactionTable = ({ transactions }) => {
           </table>
           <PaginationWrapper>
             Page: {page} / {totalPages}
-            <Button disabled={page === DEFAULT_PAGE} onClick={() => setPage(p => p - 1)}>Prev</Button>
-            <Button disabled={page === totalPages} onClick={() => setPage(p => p + 1)}>Next</Button>
+            <Button disabled={page === DEFAULT_PAGE}  onClick={handlePrev}>Prev</Button>
+            <Button disabled={page >=totalPages} onClick={handleNext}>Next</Button>
             </PaginationWrapper>
         </>
       )}
