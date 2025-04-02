@@ -40,7 +40,8 @@ when filtering the customer name last 3 months default
 ![image](https://github.com/user-attachments/assets/6da5c295-fe6c-491c-b799-190fed0239fe)
 
 Transaction when filtering months and year
-![image](https://github.com/user-attachments/assets/a8c89bd8-6813-4b26-b00e-d02cfb741a05)
+![image](https://github.com/user-attachments/assets/d8fac61e-e065-4584-974c-c081dbc09adb)
+
 
 
 
